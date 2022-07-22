@@ -5,9 +5,9 @@
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
 <body style="margin: 0px; overflow: hidden;">
     <a-scene embedded arjs>
-        <a-marker preset="hiro" preset="kanji">
+        <a-marker preset="hiro" barcode="kanji">
             <a-image src="https://raw.githack.com/JKMonteagudo/augmented_reality/main/cat_image.jpg" rotation="-90 0 0">
-               <<a-animation attribute="rotation"
+               <a-animation attribute="rotation"
                 dur="3000"
                 to="360 360 0"
                 repeat="indefinite"
