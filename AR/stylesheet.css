@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:  #404040;
+}
+h1{
+    color: white;
+}
+.container{
+    margin-top:34%;
+  
+}
+#toptext{
+    background-color: blue;
+    border: 2px solid red;
+    border-radius: 5px;
+    padding: 5px;
+    height: 100px;
+    width: 100vw;
+}
+#cameraAR{
+    border: 2px solid red;
+    border-radius: 5px;
+    padding: 5px;
+    height: 520px;
+    width: 580px;
+   margin: 0 auto 0 auto;
+}
+#cameraframe{
+    padding: 5px;
+    height: 500px;
+    width: 560px;
+}
+
+#informationtext{
+    background-color: red;
+    border: 2px solid red;
+    border-radius: 5px;
+    padding: 5px;
+    height: 100px;
+    width: 100vw;
+}
