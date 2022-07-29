@@ -1,0 +1,114 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1,h2,h3{
+    color: white;
+    opacity: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    word-wrap: break-word
+}
+#modal{
+    display: flex;
+    background: rgba(0, 0, 0, 0.64);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.8px);
+-webkit-backdrop-filter: blur(11.8px);
+    border: 1px solid;
+    border-radius: 16px;
+    padding: 5px;
+    height: 90vh;
+    width: 780px;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+   
+    
+}
+#textinfo{
+    opacity: 100%;
+    padding: 5px;
+    z-index: 1000;
+}
+/* .btn_C{
+    background:transparent;
+    border: 1px solid;
+    border-radius: 15px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 1rem 2rem;
+    cursor: pointer;
+    float: right;
+}
+.btn_C:hover{
+    background-color: #fff;
+    color: black;
+} */
+.btn_x{
+    border-radius: 50%;
+    position: absolute;
+    top: -0.8rem;
+    right: -0.7rem;
+    background: rgba(0, 0, 0, 0.44);
+    border: 1px solid #fff;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    color: white;
+
+}
+.btn_x:hover{
+    background-color: #fff;
+    color: black;
+}
+
+
+/* hindi pa tapos */
+
+/* phones 600px and down */
+@media only screen and (max-width: 600rem) {
+    #modal{
+        width: 18rem;
+        height: 18rem;
+    }
+}   
+
+/* portrait tablets and large phones 600px and up */
+@media only screen and (min-width: 600px) {
+
+
+    #modal{
+        width: 32rem;
+        height: 20rem;
+        
+    }
+   
+}
+
+/* landscape tablets 768px and up */
+@media only screen and (min-width: 768px) {
+    #modal{
+        width: 45rem;
+        height: 22rem;
+        
+    }
+}
+
+/* laptops/desktops 992px and up */
+@media only screen and (min-width: 992px) {
+    #modal{
+        width: 55rem;
+        height: 22rem;
+        
+    }
+}
+
+
+

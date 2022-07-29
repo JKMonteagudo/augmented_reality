@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Marker</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/3.4.0/aframe/build/aframe-ar-nft.js"></script>
+    <script src="https://rawgit.com/rdub80/aframe-gui/master/dist/aframe-gui.min.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="look-at.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="modal" style="visibility: hidden;">
+        <div id="textinfo">
+            <h1 id="text1">NAME</h1>
+            <h3 id="text2">Information</h1>
+            <h2 id="text3">Stock </h1>
+                <button class="btn_x" type="button" onclick="myC()">X</button> 
+       
+        </div>
+    </div>
+        <div id="AR">
+            <a-scene arjs='detectionMode:mono_and_matrix; matrixCodeType: 4x4;' vr-mode-ui="enabled:false;">
+                <a-marker type='barcode' value='60'>
+                    <a-image src="https://i.imgur.com/A7GrBRN.jpeg" 
+                        align-items="center"
+                        flex-direction="column"
+                        width="1" height="1"
+                        opacity="1"
+                        panel-rounded="0.25"
+                        rotation="-90, 0, 0"
+                        position="-1, 0.1, -1"
+                        look-at="#camera"></a-image>
+                <a-gui-flex-container 
+                    align-items="middle"
+                    flex-direction="column"
+                    width="3.5" height="1.5"
+                    opacity="0.5"
+                    position="0, 0, -1"
+                    panel-rounded="0.25"
+                    look-at="#camera">
+                    <a-gui-label 
+                        margin="-0.2 0 0 0"
+                        anchor="left"
+                        width="5" height="0.5"
+                        opacity="0"
+                        font-color="white"
+                        font-size="0.2"
+                        position="0,.5, 0"
+                        value="Tomato Seeds\n">
+                    </a-gui-label>
+                    <a-gui-label 
+                        margin="-0.3 0 0 0"
+                        anchor="left"
+                        width="5" height="0.5"
+                        opacity="0"
+                        font-color="white"
+                        font-size="0.15"
+                        position="0,.5, 0"
+                        value="Tomato is life">
+                    </a-gui-label>
+                </a-gui-flex-container>
+                    <a-gui-button
+                        width="0.5" height="0.1"
+                        hover-color="#21a2ed"
+                        active-color="#104869"
+                        font-color="white"
+                        font-size="0.1"
+                        margin="-0.7 0 0 0"
+                        position=".5, 0, -.5"
+                        bevel="true"
+                        value="More Info"
+                        onclick="myf(0,0)"
+                        look-at="#camera">
+                    </a-gui-button>
+                </a-marker>
+                <a-marker type='barcode' value='61'>
+                    <a-image src="https://i.imgur.com/XluMKK9.png" 
+                        align-items="center"
+                        flex-direction="column"
+                        width="1" height="1"
+                        opacity="1"
+                        panel-rounded="0.25"
+                        rotation="-90, 0, 0"
+                        position="-1, .1, -1"
+                        look-at="#camera"></a-image>
+                <a-gui-flex-container 
+                    align-items="middle"
+                    flex-direction="column"
+                    width="3.5" height="1.5"
+                    opacity="0.5"
+                    rotation="-90, 0, 0"
+                    position="0, 0, -1"
+                    panel-rounded="0.25"
+                    look-at="#camera">
+                    <a-gui-label 
+                        margin="-0.2 0 0 0"
+                        anchor="left"
+                        width="5" height="0.5"
+                        opacity="0"
+                        font-color="white"
+                        font-size="0.2"
+                        position="0,.5, 0"
+                        value="Carrot Seeds\n">
+                    </a-gui-label>
+                    <a-gui-label 
+                        margin="-0.3 0 0 0"
+                        anchor="left"
+                        width="5" height="0.5"
+                        opacity="0"
+                        font-color="white"
+                        font-size="0.15"
+                        position="0,.5, 0"
+                        value="Carrot is orange">
+                    </a-gui-label>
+                </a-gui-flex-container>
+                    <a-gui-button
+                        width="0.5" height="0.1"
+                        hover-color="#21a2ed"
+                        active-color="#104869"
+                        font-color="white"
+                        font-size="0.1"
+                        margin="-0.7 0 0 0"
+                        rotation="-90, 0, 0"
+                        position=".5, 0, -.5"
+                        bevel="true"
+                        value="More Info"
+                        onclick="myf(1,0)"
+                        look-at="#camera">
+                    </a-gui-button>
+                </a-marker>
+                <a-marker type='barcode' value='62'>
+                    <a-image src="https://i.imgur.com/5oZOP0J.png" 
+                        align-items="center"
+                        flex-direction="column"
+                        width="1" height="1"
+                        opacity="1"
+                        panel-rounded="0.25"
+                        rotation="-90, 0, 0"
+                        position="-1, .1, -1"
+                        look-at="#camera"></a-image>
+                <a-gui-flex-container 
+                    align-items="middle"
+                    flex-direction="column"
+                    width="3.5" height="1.5"
+                    opacity="0.5"
+                    rotation="-90, 0, 0"
+                    position="0, 0, -1"
+                    panel-rounded="0.25"
+                    look-at="#camera">
+                    <a-gui-label 
+                        margin="-0.2 0 0 0"
+                        anchor="left"
+                        width="5" height="0.5"
+                        opacity="0"
+                        font-color="white"
+                        font-size="0.2"
+                        position="0,.5, 0"
+                        value="Cabbage Seeds\n">
+                    </a-gui-label>
+                    <a-gui-label 
+                        margin="-0.3 0 0 0"
+                        anchor="left"
+                        width="5" height="0.5"
+                        opacity="0"
+                        font-color="white"
+                        font-size="0.15"
+                        position="0,.5, 0"
+                        value="Cabbage">
+                    </a-gui-label>
+                </a-gui-flex-container>
+                    <a-gui-button
+                        width="0.5" height="0.1"
+                        hover-color="#21a2ed"
+                        active-color="#104869"
+                        font-color="white"
+                        font-size="0.1"
+                        margin="-0.7 0 0 0"
+                        rotation="-90, 0, 0"
+                        position=".5, 0, -.5"
+                        bevel="true"
+                        value="More Info"
+                        onclick="myf(2,0)"
+                        look-at="#camera">
+                    </a-gui-button>
+                </a-marker>
+                <a-marker type='barcode' value='63'>
+                    <a-image src="https://i.imgur.com/NAvu4bN.jpeg" 
+                        align-items="center"
+                        flex-direction="column"
+                        width="1" height="1"
+                        opacity="1"
+                        panel-rounded="0.25"
+                        rotation="-90, 0, 0"
+                        position="-1, .1, -1"
+                        look-at="#camera"></a-image>
+                <a-gui-flex-container 
+                    align-items="middle"
+                    flex-direction="column"
+                    width="3.5" height="1.5"
+                    opacity="0.5"
+                    rotation="-90, 0, 0"
+                    position="0, 0, -1"
+                    panel-rounded="0.25"
+                    look-at="#camera">
+                    <a-gui-label 
+                        margin="-0.2 0 0 0"
+                        anchor="left"
+                        width="5" height="0.5"
+                        opacity="0"
+                        font-color="white"
+                        font-size="0.2"
+                        position="0,.5, 0"
+                        value="Eggplant Seeds\n">
+                    </a-gui-label>
+                    <a-gui-label 
+                        margin="-0.3 0 0 0"
+                        anchor="left"
+                        width="5" height="0.5"
+                        opacity="0"
+                        font-color="white"
+                        font-size="0.15"
+                        position="0,.5, 0"
+                        value="Egg is plant">
+                    </a-gui-label>
+                </a-gui-flex-container>
+                    <a-gui-button
+                        width="0.5" height="0.1"
+                        hover-color="#21a2ed"
+                        active-color="#104869"
+                        font-color="white"
+                        font-size="0.1"
+                        margin="-0.7 0 0 0"
+                        rotation="-90, 0, 0"
+                        position=".5, 0, -.5"
+                        bevel="true"
+                        value="More Info"
+                        onclick="myf(3,0)"
+                        look-at="#camera">
+                    </a-gui-button>
+                </a-marker>
+                    <a-entity id="cameraRig" position="0 1.6 0">
+                        <a-camera id="camera" look-controls wasd-controls position="0 0 0">
+                            <a-gui-cursor id="cursor"
+                                raycaster="objects: [gui-interactable]"
+                                fuse="true" fuse-timeout="1000"
+                                color="#59f4ff"
+                                hover-color="#a8f9ff"
+                                active-color="#ffffff"
+                                design="ring" > <!-- dot, ring, reticle, cross  -->
+                            </a-gui-cursor> <!-- /cursor -->
+                        </a-camera> <!-- /camera -->
+                    </a-entity> 
+            </a-scene>
+        </div>
+</body>
+</html>
